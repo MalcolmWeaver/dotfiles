@@ -1,5 +1,3 @@
-print("hello")
-
 vim.env.PATH = '/usr/local/bin:' .. vim.env.PATH
 
 -- Bootstrap lazy.nvim

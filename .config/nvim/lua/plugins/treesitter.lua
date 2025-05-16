@@ -1,6 +1,6 @@
 return {
     "nvim-treesitter/nvim-treesitter",
-    build = ":TSUpdate",
+    build = ":TS:pdate",
     config = function()
         local config = require("nvim-treesitter.configs")
         config.setup({
@@ -9,4 +9,5 @@ return {
             indent = { enable = true },
         })
     end
+
 }

@@ -4,5 +4,8 @@
         "opts",
         "let",
         "null_ls"
+    ],
+    "diagnostics.disable": [
+        "missing-fields"
     ]
 }
