@@ -28,3 +28,9 @@ vim.keymap.set("n", "N", "Nzzzv")
 vim.keymap.set("x", "<leader>p", "\"_dP")
 
 vim.keymap.set("v", "y", "\"+y");
+vim.keymap.set(
+  { 'n', 'i', 'v' }, -- Apply to normal, insert, and visual modes
+  '<S-F15>',         -- The key notation for Shift+F15; Neovim recognizes this
+  function() end,    -- Empty function does nothing when the key is pressed
+  { noremap = true, silent = true } -- noremap: non-recursive mapping, silent: no output
+)
