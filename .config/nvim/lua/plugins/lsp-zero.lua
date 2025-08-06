@@ -1,6 +1,5 @@
 return {
     'VonHeikemen/lsp-zero.nvim',
-
     dependencies = {
         'neovim/nvim-lspconfig',
         'hrsh7th/nvim-cmp',
@@ -37,9 +36,9 @@ return {
         for _, lsp in ipairs(vim.tbl_keys(lang_servers)) do
             lspconfig[lsp].setup(lang_servers[lsp])
         end
-        lspconfig.lua_ls.setup(zero.nvim_lua_ls())
         lspconfig.basedpyright.setup({})
         lspconfig.clangd.setup({})
-        lspconfig.nil_ls.setup({})
+        lspconfig.bashls.setup({})
+        lspconfig.ts_ls.setup({})
     end,
 }
