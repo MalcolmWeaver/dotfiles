@@ -1,4 +1,2 @@
-return {
-    { "mason-org/mason.nvim",           version = "^1.0.0" },
-    { "mason-org/mason-lspconfig.nvim", version = "^1.0.0" },
-}
+-- Previously pinned mason v1 for an old setup. Left empty after nvim 0.11 LSP migrate.
+return {}
